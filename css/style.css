@@ -1,0 +1,265 @@
+body{
+    margin: 0 0 0 0;
+    overflow: hidden;
+}
+
+.nav{
+    width: 100vw;
+    height: 80px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.22);
+    border-bottom: 1px solid rgb(231, 231, 231);
+}
+
+.main-content{
+    display: flex;
+    height: calc(100vh - 80px);
+    background-color: rgb(247, 247, 247);
+    overflow-x: hidden;
+}
+
+.user-menu{
+    padding-top: 10px;
+    height: calc(100% - 10px);
+    width: 25vw;
+    background-color: rgb(255, 255, 255) ;
+    display: flex;
+    flex-direction: column;
+    min-width: 400px;
+    text-align: center;
+    border-right: solid rgb(230, 228, 228) 1px;
+}
+.side-bar{
+    height: 100%;
+    width: 25vw;
+    background-color: transparent;
+}
+.upper{
+    height: 30%;
+    width: 100%;
+    padding-bottom: 10px;
+}
+.upper1{
+    margin-bottom: 10px;
+    height: 70%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.lower{
+    height: 70%;
+    width: 100%;
+}
+.list{
+    list-style-type: none;
+    display: flex;
+    padding-left: 0;
+}
+li{
+    list-style-type: none;
+    text-align: center;
+    padding: 0 10px;
+}
+.do{
+    color: gray;
+}
+.left{
+    height: 100%;
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.right{
+    height: 100%;
+    width: 60%;
+}
+.btn{
+    margin-top: 15px;
+    margin-left: 20%;
+    width:60%;
+    height: 15%;
+    border-radius: 5px;
+    background-color: red;
+    padding-right: 10px;
+}
+.user-image > img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+.ac{
+    width: 100%;
+    height: 20%;
+    background-color: transparent;
+}
+.about-class{
+    margin-top: 20px;
+    width: 70%;
+    height: 60px;
+    border-radius: 5 px;
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    box-shadow: 0 10px 10px rgba(180, 180, 180, 0.22);
+}
+.in-class{
+    width: 100%;
+    height: calc(80% - 40px);
+}
+.part{
+    margin-left: 15%;
+}
+.onlin{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.chip {
+    display: inline-block;
+    padding: 5px;
+    height: 50px;
+    font-size: 16px;
+    line-height: 50px;
+    border-radius: 35px;
+    background-color: #f1f1f1;
+    margin: 5px 15%;
+    width: 70%;
+}
+.chip > img {
+    float: left;
+    margin: 0 0 0 0;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    padding-right: 5px;
+}
+.feed{
+    height: 100%;
+    width: 50vw;
+    overflow-y: scroll;
+}
+.card{
+    width: 80%;
+    height: auto;
+    margin: 20px 10% 0 10%;
+    border-radius: 5px;
+    border: solid rgb(226, 226, 226) 0.5px;
+    box-shadow: 0 10px 10px rgba(148, 148, 148, 0.22);
+    background-color: white;
+}
+.first{
+    width: 100%;
+    border-bottom: solid rgb(226, 226, 226) 0.5px;
+    height: 30%;
+    display: flex;
+    padding-bottom: 10px;
+}
+.first0{
+    padding-top: 10px;
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.user-img > img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+.first1{
+    width: 80%;
+    padding-top: 10px;
+}
+p{
+    margin: 0 0 0 0;
+    padding-top: 10px;
+}
+.pp{
+    font-family: "Segoe UI";
+    font-weight: 100;
+    font-size: 11px;
+}
+.second{
+    width: 100%;
+    height: 50%;
+    border-bottom: solid rgb(226, 226, 226) 0.5px;
+}
+.third{
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 40px;
+    padding-right: 40px;
+    align-items: center;
+}
+.design{
+    padding-left: 100px;
+}
+.design > li{
+    margin-bottom: 0;
+    margin-top: 0;
+    text-align: justify;
+    width: 80%;
+    padding: 10px;
+}
+i{
+    padding-right: 10px;
+}
+.hidden{
+    display: none;
+    visibility: hidden;
+}
+.card-content{
+    padding-left: 20%;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+.card-content > p{
+    padding: 0;
+}
+.card-content > h2{
+   margin-top: 10px;
+   margin-bottom: 10px;
+}
+.shap > button{
+    width: 100px;
+    height: 30px;
+    background-color: red;
+    border-radius: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.topic{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+}
+.fa-podcast{
+    color: red;
+}
+.shap{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+}
+.btn-off{
+    border: none;
+    background-color: transparent;
+    width: 80%;
+    padding: 5px;
+    text-align: left;
+}    
+.active{
+    border: none;
+    background-color: rgb(209, 209, 209);
+    width: 80%;
+    padding: 5px;
+    text-align: left;
+    color: black;
+    border-radius: 0 25px 25px 0;
+}
+button:focus{
+    outline: none;
+}

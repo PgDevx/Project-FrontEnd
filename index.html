@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Flashme</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/5a6a08cdf0.js" crossorigin="anonymous"></script>
+        <style>
+            /* width */
+            ::-webkit-scrollbar {
+            width: 10px;
+            height: 8px;
+            }
+        
+            /* Track */
+            ::-webkit-scrollbar-track {
+            background: transparent;
+            }
+        
+            /* Handle */
+            ::-webkit-scrollbar-thumb {
+            background: rgb(233, 233, 233);
+            border-radius: 10px;
+            }
+        
+            /* Handle on hover */
+            ::-webkit-scrollbar-thumb:hover {
+            background: rgb(161, 161, 161)187, 187, 187);
+            }
+        </style>
+    </head>
+    <body>
+        <div class="nav"></div>
+        <div class="main-content">
+            <div class="user-menu">
+                <div class="upper">
+                    <div class="upper1">
+                        <div class="left">
+                            <div class="user-image">
+                                <img src="assets/db.jpg" alt="Person" width="96" height="96">
+                            </div>
+                        </div>
+                        <div class="right">  
+                            <p>Bse 1st sem Cse<br>
+                            All Subjet</p>
+                            <p class="do">by Jeet Sir</p>
+                            <ul class="list">
+                                <li>0<br>Materials</li> 
+                                <li>15<br>Posts</li> 
+                                <li>4<br>Members</li> 
+                            </ul>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn">Join Class</button>
+                    <i class="fas fa-share-alt"></i>
+                </div>
+                <div class="lower">
+                    <ul class="design">
+                        <li><button id="timeline-btn" class="active" onclick="changeSection('timeline')"><i class="fas fa-stream"></i> Timeline</button></li>
+                        <li><button id="liveclass-btn" class="btn-off" onclick="changeSection('liveclass')"><i class="fas fa-headset"></i> Live Class</button></li>
+                        <li><button id="notes-btn" class="btn-off" onclick="changeSection('notes')"><i class="fas fa-book-open"></i> Notes</button></li>
+                        <li><i class="far fa-clipboard"></i> Assignment</li>
+                        <li><i class="far fa-file-alt"></i> Test</li>
+                        <li><i class="fas fa-concierge-bell"></i> Attendence</li>
+                        <li><i class="fas fa-book-reader"></i> Apply for Leave</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="feed">
+                <section id="timeline">
+                    <div class="card">
+                        <div class="first">
+                            <div class="first0">
+                                <div class="user-img">
+                                    <img src="assets/db.jpg" alt="Person" width="96" height="96">
+                                </div>
+                            </div>
+                            <div class="first1">
+                                <p>Bse 1st Sem Cse All Subjects</p>
+                                <p>Jeet Sir</p>
+                                <p class="pp">06-07-2020 10:12am</p>
+                            </div>
+                        </div>
+                        <div class="second">
+                            <div class="card-content">
+                                <p>Quiz is tomorrow be ready at 11am circulate this<br>
+                                    news amoung your friends, defaulters won't be<br>
+                                    considered.</p>
+                            </div>    
+                        </div>
+                        <div class="third">
+                            <div><i class="far fa-thumbs-up"></i>Like</div>
+                            <div><i class="far fa-comment"></i>Comment</div>
+                            <div><i class="fas fa-share-alt"></i>Share</div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="first">
+                            <div class="first0">
+                                <div class="user-img">
+                                    <img src="assets/db.jpg" alt="Person" width="96" height="96">
+                                </div>
+                            </div>
+                            <div class="first1">
+                                <p>Bse 1st Sem Cse All Subjects</p>
+                                <p>Jeet Sir</p>
+                                <p class="pp">06-07-2020 10:12am</p>
+                            </div>
+                        </div>
+                        <div class="second">
+                            <div class="card-content">
+                                <p>Aman, Aroop, Binayak submit your assignment Asap!!<br>
+                                Last timing is 5:30pm today.</p>
+                            </div>    
+                        </div>
+                        <div class="third">
+                            <div><i class="far fa-thumbs-up"></i>Like</div>
+                            <div><i class="far fa-comment"></i>Comment</div>
+                            <div><i class="fas fa-share-alt"></i>Share</div>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="liveclass" class="hidden">
+                    <div class="card">
+                        <div class="first">
+                            <div class="first0">
+                                <div class="user-img">
+                                    <img src="assets/db.jpg" alt="Person" width="96" height="96">
+                                </div>
+                            </div>
+                            <div class="first1">
+                                <p>Bse 1st Sem Cse All Subjects</p>
+                                <p>Jeet Sir</p>
+                            </div>
+                        </div>
+                        <div class="second">
+                            <div class="card-content">
+                                <div class="topic">
+                                    <p>Topic</p>
+                                    <p><i class="fas fa-podcast"></i>Online</p>
+                                </div>
+                                <h2>React Js</h2>
+                                <div class="shap">
+                                    <p class="pp">Started At:06 JUL,2020 10:12am</p>
+                                    <button type="submit">Enter</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="third">
+                            <div><i class="far fa-thumbs-up"></i>Like</div>
+                            <div><i class="far fa-comment"></i>Comment</div>
+                            <div><i class="fas fa-share-alt"></i>Share</div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="first">
+                            <div class="first0">
+                                <div class="user-img">
+                                    <img src="assets/db.jpg" alt="Person" width="96" height="96">
+                                </div>
+                            </div>
+                            <div class="first1">
+                                <p>Bse 1st Sem Cse All Subjects</p>
+                                <p>Jeet Sir</p>
+                            </div>
+                        </div>
+                        <div class="second">
+                            <div class="card-content">
+                                <div class="topic">
+                                    <p>Topic</p>
+                                    <p><i class="fas fa-podcast"></i>Online</p>
+                                </div>
+                                <h2>Bootstrap</h2>
+                                <div class="shap">
+                                    <p class="pp">Started At:06 JUL,2020 10:10am</p>
+                                    <button type="submit">Enter</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="third">
+                            <div><i class="far fa-thumbs-up"></i>Like</div>
+                            <div><i class="far fa-comment"></i>Comment</div>
+                            <div><i class="fas fa-share-alt"></i>Share</div>
+                        </div>
+                    </div>
+                </section>
+                
+                <section id="notes" class="hidden">
+                    <div class="card">
+                        <div class="first">
+                            <div class="first0">
+                                <div class="user-img">
+                                    <img src="assets/db.jpg" alt="Person" width="96" height="96">
+                                </div>
+                            </div>
+                            <div class="first1">
+                                <p>Bse 1st Sem Cse All Subjects</p>
+                                <p>Jeet Sir</p>
+                            </div>
+                        </div>
+                        <div class="second">
+                            <div class="card-content">
+                                <p>Topic</p>
+                                <h2>React Js</h2>
+                                <div class="shap">
+                                    <p class="pp">Page-78</p>
+                                    <button type="submit">Read</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="third">
+                            <div><i class="far fa-thumbs-up"></i>Like</div>
+                            <div><i class="far fa-comment"></i>Comment</div>
+                            <div><i class="fas fa-share-alt"></i>Share</div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="first">
+                            <div class="first0">
+                                <div class="user-img">
+                                    <img src="assets/db.jpg" alt="Person" width="96" height="96">
+                                </div>
+                            </div>
+                            <div class="first1">
+                                <p>Bse 1st Sem Cse All Subjects</p>
+                                <p>Jeet Sir</p>
+                            </div>
+                        </div>
+                        <div class="second">
+                            <div class="card-content">
+                                <p>Topic</p>
+                                <h2>Bootstrap</h2>
+                                <div class="shap">
+                                    <p class="pp">Page-90</p>
+                                    <button type="submit">Read</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="third">
+                            <div><i class="far fa-thumbs-up"></i>Like</div>
+                            <div><i class="far fa-comment"></i>Comment</div>
+                            <div><i class="fas fa-share-alt"></i>Share</div>
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+            <div class="side-bar">
+                <div class="ac">
+                    <div class="about-class">
+                        About Classroom<hr>
+                    </div>
+                </div>
+                <div class="in-class">
+                    <div class="part"><h3>In Class</h3></div>
+                    <div class="onlin">
+                        <div class="chip">
+                            <img src="assets/img_avatar.png" alt="Person" width="96" height="96">
+                            Aman
+                        </div>
+                        <div class="chip">
+                            <img src="assets/img_avatar.png" alt="Person" width="96" height="96">
+                            Sanjay
+                        </div>
+                        <div class="chip">
+                            <img src="assets/img_avatar.png" alt="Person" width="96" height="96">
+                            Karan
+                        </div>
+                        <div class="chip">
+                            <img src="assets/image.jpg" alt="Person" width="96" height="96">
+                            Anjali
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <script src="js/main.js"></script>
+    </body>
+</html>
